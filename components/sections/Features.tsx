@@ -53,7 +53,7 @@ const Category = ({ imgURL, imgAlt, title, children }: CategoryProps) => (
 
 function Features() {
   return (
-    <div className="flex flex-col items-center py-20 text-center gap-y-20 bg-aircraft-white sm:gap-y-24 sm:py-24">
+    <div className="flex flex-col items-center px-6 py-20 text-center gap-y-20 bg-aircraft-white sm:gap-y-24 sm:py-24">
       <Hooks
         imgURL="/images/easy-to-implement.svg"
         imgSize="h-52 w-80 sm:w-96 sm:h-64"

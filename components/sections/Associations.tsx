@@ -29,7 +29,7 @@ function Associations() {
       />
       <SectionBodyText
         color="text-link-water-white/50"
-        extraClasses="mt-4 w-112"
+        extraClasses="mt-4 sm:w-112"
       >
         Today, millions of people around the world have successfully connected
         their accounts to apps they love using our API. We provide developers

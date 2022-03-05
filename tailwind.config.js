@@ -10,9 +10,12 @@ module.exports = {
       },
       spacing: {
         22: "5.5rem",
+
         76: "19rem",
         112: "28rem",
+        125: "31.25rem",
         140: "35rem",
+        280: "70rem",
       },
       colors: {
         "link-water-white": "#fbfcfe",
