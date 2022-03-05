@@ -9,7 +9,9 @@ module.exports = {
         center: true,
       },
       colors: {
+        "link-water-white": "#fbfcfe",
         "aircraft-white": "#edf3f8",
+        "light-san-juan-blue": "#6c8294",
         "mirage-blue": "#1B262F",
         "velvet-rope": "#36536b",
         "lilac-rose": "#BA4270",
@@ -23,7 +25,7 @@ module.exports = {
         "hero-pattern": "url('/images/bg-pattern-circle.svg')",
       },
       backgroundPosition: {
-        hero: "50% 1500%",
+        "hero-position": "center -500px",
       },
     },
   },
