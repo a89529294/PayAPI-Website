@@ -6,7 +6,7 @@ import DemoForm from "../DemoForm";
 
 const Hero = () => {
   return (
-    <div className="bg-no-repeat bg-aircraft-white bg-hero-pattern bg-hero-position sm:bg-hero-pattern-tablet sm:bg-hero-position-tablet">
+    <div className="bg-no-repeat bg-aircraft-white bg-hero-pattern bg-hero-position sm:bg-hero-pattern-tablet sm:bg-hero-position-tablet xl:bg-hero-pattern xl:bg-hero-position-desktop">
       <div className="flex flex-col items-center px-6 pt-10 pb-20 text-center sm:px-10 sm:pt-10 sm:pb-20 xl:px-20 xl:container">
         <Head>
           <title>PayAPI - Home</title>
@@ -22,8 +22,11 @@ const Hero = () => {
             />
           </div>
           <div className="xl:order-1">
-            <DemoForm title="Start building with our APIs for absolutely free." />
-            <p className="mt-6 text-center font-body text-light-san-juan-blue sm:mt-4">
+            <DemoForm
+              title="Start building with our APIs for absolutely free."
+              extraTitleClasses="max-w-[18ch] sm:max-w-[20ch] xl:max-w-[14ch] xl:text-7xl"
+            />
+            <p className="mt-6 text-center font-body text-light-san-juan-blue sm:mt-4 xl:text-left xl:pl-6">
               Have any questions? <span className="font-bold">Contact Us</span>
             </p>
           </div>

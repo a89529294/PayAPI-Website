@@ -4,15 +4,31 @@ import SectionTitle from "./SectionTitle";
 import Input from "./Input";
 import Button from "./Button";
 
-function DemoForm({ title }: { title: string }) {
+function DemoForm({
+  title,
+  extraTitleClasses,
+  row,
+}: {
+  title: string;
+  extraTitleClasses?: string;
+  row?: boolean;
+}) {
   return (
-    <div>
+    <div
+      className={`flex flex-col items-center xl:items-start  ${
+        row ? "xl:flex-row xl:w-full xl:justify-between xl:items-center" : ""
+      }`}
+    >
       <SectionTitle
         text={title}
         color="text-velvet-rope"
-        extraClasses="mx-auto"
+        extraClasses={extraTitleClasses}
       />
-      <form className="mt-7 sm:w-112 sm:relative sm:mt-10">
+      <form
+        className={`mt-7 sm:w-112 sm:relative sm:mt-10 ${
+          row ? "order-1 xl:mt-0" : ""
+        }`}
+      >
         <Input extraClasses="mb-4 sm:mb-0" />
         <Button
           size="large"

@@ -12,7 +12,7 @@ function SectionBodyText({
   extraClasses,
 }: SectionBodyTextProps) {
   return (
-    <p className={`font-body leading-7 w-80 sm:w-140 ${color} ${extraClasses}`}>
+    <p className={`font-body leading-7 w-80 ${color} ${extraClasses}`}>
       {children}
     </p>
   );

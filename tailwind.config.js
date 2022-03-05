@@ -12,6 +12,7 @@ module.exports = {
         22: "5.5rem",
 
         76: "19rem",
+        87: "21.75rem",
         112: "28rem",
         125: "31.25rem",
         140: "35rem",
@@ -36,6 +37,7 @@ module.exports = {
       backgroundPosition: {
         "hero-position": "center -500px",
         "hero-position-tablet": "center -700px",
+        "hero-position-desktop": "700px -200px",
         "footer-position": "center 175px",
       },
     },
