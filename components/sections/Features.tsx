@@ -14,7 +14,7 @@ interface HooksProps {
 
 function Hooks({ imgURL, imgHeight, imgAlt, title, children }: HooksProps) {
   return (
-    <div className="flex flex-col items-center text-center">
+    <div className="flex flex-col items-center ">
       <div className={`relative mb-12 w-80 h-52 ${imgHeight}`}>
         <Image
           src={imgURL}
@@ -53,7 +53,7 @@ const Category = ({ imgURL, imgAlt, title, children }: CategoryProps) => (
 
 function Features() {
   return (
-    <div className="flex flex-col items-center py-20 gap-y-20">
+    <div className="flex flex-col items-center py-20 text-center gap-y-20">
       <Hooks
         imgURL="/images/easy-to-implement.svg"
         imgHeight="h-52"
@@ -73,7 +73,7 @@ function Features() {
         Our pre-built form is easy to integrate in your app or website’s
         checkout flow and designed to optimize conversion.
       </Hooks>
-      <div className="flex flex-col items-center text-center gap-y-12">
+      <div className="flex flex-col items-center gap-y-12">
         <Category
           imgURL="/images/icon-personal-finances.svg"
           imgAlt="personal finance icon"

@@ -3,26 +3,13 @@ import Link from "next/link";
 
 import PayAPI from "../company-logos/PayAPI";
 import Image from "next/image";
+import NavLinks from "../NavLinks";
 
 function Footer() {
   return (
-    <div className="flex flex-col items-center pt-10 pb-14 bg-mirage-blue gap-y-10">
+    <div className="flex flex-col items-center pt-10 bg-no-repeat pb-14 bg-mirage-blue gap-y-10 bg-hero-pattern bg-footer-position">
       <PayAPI fill="white" />
-      <nav className="flex flex-col gap-y-8">
-        <Link href="/">
-          <a className="font-bold font-body text-link-water-white/70">
-            Pricing
-          </a>
-        </Link>
-        <Link href="/">
-          <a className="font-bold font-body text-link-water-white/70">About</a>
-        </Link>
-        <Link href="/">
-          <a className="font-bold font-body text-link-water-white/70">
-            Contact
-          </a>
-        </Link>
-      </nav>
+      <NavLinks />
       <div className="flex gap-x-6">
         <Image
           src="/images/facebook.svg"

@@ -9,7 +9,7 @@ interface SectionTitleProps {
 function SectionTitle({ text, extraClasses, color }: SectionTitleProps) {
   return (
     <h1
-      className={`${extraClasses} ${color} text-3xl tracking-tight font-display max-w-[18ch] text-center`}
+      className={`${extraClasses} ${color} text-3xl tracking-tight font-display max-w-[18ch] text-center sm:text-5xl sm:max-w-[20ch]`}
     >
       {text}
     </h1>

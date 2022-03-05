@@ -8,6 +8,10 @@ module.exports = {
       container: {
         center: true,
       },
+      spacing: {
+        76: "19rem",
+        112: "28rem",
+      },
       colors: {
         "link-water-white": "#fbfcfe",
         "aircraft-white": "#edf3f8",
@@ -23,9 +27,12 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/images/bg-pattern-circle.svg')",
+        "hero-pattern-tablet": "url('/images/bg-pattern-circle-tablet.svg')",
       },
       backgroundPosition: {
         "hero-position": "center -500px",
+        "hero-position-tablet": "center -700px",
+        "footer-position": "center 175px",
       },
     },
   },
