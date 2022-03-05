@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import Hero from "../components/sections/Hero";
 import Associations from "../components/sections/Associations";
 import Features from "../components/sections/Features";
+import Footer from "../components/sections/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <Hero />
       <Associations />
       <Features />
+      <Footer />
     </>
   );
 };

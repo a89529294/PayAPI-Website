@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import PayAPI from "./company-logos/PayAPI";
 
 export default function Navbar() {
   return (
     <nav className="flex items-center justify-between w-full">
-      <Image src="/images/logo.svg" alt="logo" width={135} height={38} />
+      <PayAPI />
       <Image
         src="/images/burger.svg"
         alt="menu burger"

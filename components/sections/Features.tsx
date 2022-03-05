@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import DemoForm from "../DemoForm";
 import SectionBodyText from "../SectionBodyText";
 import SectionTitle from "../SectionTitle";
 
@@ -101,6 +102,7 @@ function Features() {
           authenticate their account.
         </Category>
       </div>
+      <DemoForm title="Ready to start?" />
     </div>
   );
 }

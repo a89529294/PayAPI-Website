@@ -2,9 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Navbar from "../Navbar";
-import Input from "../Input";
-import Button from "../Button";
-import SectionTitle from "../SectionTitle";
+import DemoForm from "../DemoForm";
 
 const Hero = () => {
   return (
@@ -13,7 +11,7 @@ const Hero = () => {
         <title>PayAPI - Home</title>
       </Head>
       <Navbar />
-      <div className="relative w-32 mt-8 shadow-2xl h-60">
+      <div className="relative w-32 mt-8 mb-6 shadow-2xl h-60">
         <Image
           src="/images/illustration-phone-mockup.svg"
           alt="phone"
@@ -21,21 +19,8 @@ const Hero = () => {
           objectFit="contain"
         />
       </div>
-      <SectionTitle
-        text="Start building with our APIs for absolutely free."
-        color="text-velvet-rope"
-        extraClasses="mt-6"
-      />
-      <form className="mt-6">
-        <Input extraClasses="mb-4" />
-        <Button
-          size="large"
-          label="Schedule a Demo"
-          backgroundColor="bg-lilac-rose"
-          color="text-white"
-        />
-      </form>
 
+      <DemoForm title="Start building with our APIs for absolutely free." />
       <p className="mt-6 text-center font-body text-gilneas-grey">
         Have any questions? <span className="font-bold">Contact Us</span>
       </p>
