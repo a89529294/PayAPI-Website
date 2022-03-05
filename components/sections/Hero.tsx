@@ -6,7 +6,7 @@ import DemoForm from "../DemoForm";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center px-6 pt-10 pb-20 text-center bg-no-repeat bg-aircraft-white bg-hero-pattern bg-hero-position sm:bg-hero-pattern-tablet sm:bg-hero-position-tablet sm:px-10 sm:pt-10 sm:pb-24">
+    <div className="flex flex-col items-center px-6 pt-10 pb-20 text-center bg-no-repeat bg-aircraft-white bg-hero-pattern bg-hero-position sm:bg-hero-pattern-tablet sm:bg-hero-position-tablet sm:px-10 sm:pt-10 sm:pb-20">
       <Head>
         <title>PayAPI - Home</title>
       </Head>
@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
 
       <DemoForm title="Start building with our APIs for absolutely free." />
-      <p className="mt-6 text-center font-body text-gilneas-grey sm:mt-4">
+      <p className="mt-6 text-center font-body text-light-san-juan-blue sm:mt-4">
         Have any questions? <span className="font-bold">Contact Us</span>
       </p>
     </div>

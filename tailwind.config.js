@@ -9,8 +9,10 @@ module.exports = {
         center: true,
       },
       spacing: {
+        22: "5.5rem",
         76: "19rem",
         112: "28rem",
+        140: "35rem",
       },
       colors: {
         "link-water-white": "#fbfcfe",
@@ -19,7 +21,6 @@ module.exports = {
         "mirage-blue": "#1B262F",
         "velvet-rope": "#36536b",
         "lilac-rose": "#BA4270",
-        "gilneas-grey": "#6C8294",
       },
       fontFamily: {
         display: ["'DM Serif Display'", "serif"],

@@ -12,7 +12,7 @@ function DemoForm({ title }: { title: string }) {
         color="text-velvet-rope"
         extraClasses="mx-auto"
       />
-      <form className="mt-7 sm:w-112 sm:relative">
+      <form className="mt-7 sm:w-112 sm:relative sm:mt-10">
         <Input extraClasses="mb-4 sm:mb-0" />
         <Button
           size="large"

@@ -7,7 +7,7 @@ import NavLinks from "../NavLinks";
 
 function Footer() {
   return (
-    <div className="flex flex-col items-center pt-10 bg-no-repeat pb-14 bg-mirage-blue gap-y-10 bg-hero-pattern bg-footer-position">
+    <div className="flex flex-col items-center px-10 pt-10 bg-no-repeat pb-14 bg-mirage-blue gap-y-10 bg-hero-pattern bg-footer-position sm:py-8 sm:flex-row sm:justify-between">
       <PayAPI fill="white" />
       <NavLinks />
       <div className="flex gap-x-6">

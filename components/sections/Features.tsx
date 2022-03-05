@@ -6,16 +6,16 @@ import SectionTitle from "../SectionTitle";
 
 interface HooksProps {
   imgURL: string;
-  imgHeight: string;
+  imgSize: string;
   imgAlt: string;
   title: string;
   children: string;
 }
 
-function Hooks({ imgURL, imgHeight, imgAlt, title, children }: HooksProps) {
+function Hooks({ imgURL, imgSize, imgAlt, title, children }: HooksProps) {
   return (
     <div className="flex flex-col items-center ">
-      <div className={`relative mb-12 w-80 h-52 ${imgHeight}`}>
+      <div className={`relative mb-12 drop-shadow-2xl ${imgSize}`}>
         <Image
           src={imgURL}
           alt={imgAlt}
@@ -41,11 +41,11 @@ interface CategoryProps {
 
 const Category = ({ imgURL, imgAlt, title, children }: CategoryProps) => (
   <div>
-    <div className="relative mx-auto mb-8 w-28 h-28">
+    <div className="relative mx-auto mb-8 w-28 h-28 sm:w-22 sm:h-22 ">
       <Image src={imgURL} alt={imgAlt} layout="fill" objectFit="contain" />
     </div>
     <h2 className="mb-4 text-lg font-bold font-body">{title}</h2>
-    <SectionBodyText color="text-light-san-juan-blue">
+    <SectionBodyText color="text-light-san-juan-blue" extraClasses="sm:w-56">
       {children}
     </SectionBodyText>
   </div>
@@ -53,10 +53,10 @@ const Category = ({ imgURL, imgAlt, title, children }: CategoryProps) => (
 
 function Features() {
   return (
-    <div className="flex flex-col items-center py-20 text-center gap-y-20">
+    <div className="flex flex-col items-center py-20 text-center gap-y-20 bg-aircraft-white sm:gap-y-24 sm:py-24">
       <Hooks
         imgURL="/images/easy-to-implement.svg"
-        imgHeight="h-52"
+        imgSize="h-52 w-80 sm:w-96 sm:h-64"
         imgAlt="easy to implement illustration"
         title="Easy to implement"
       >
@@ -66,14 +66,14 @@ function Features() {
       </Hooks>
       <Hooks
         imgURL="/images/simple-ui.svg"
-        imgHeight="h-72"
+        imgSize="h-72 w-80 sm:w-96 sm:h-80"
         imgAlt="simple ui & ux illustration"
         title="Simple UI & UX"
       >
         Our pre-built form is easy to integrate in your app or website’s
         checkout flow and designed to optimize conversion.
       </Hooks>
-      <div className="flex flex-col items-center gap-y-12">
+      <div className="flex flex-col items-center gap-y-12 sm:flex-row sm:items-start sm:gap-x-3">
         <Category
           imgURL="/images/icon-personal-finances.svg"
           imgAlt="personal finance icon"

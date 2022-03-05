@@ -13,8 +13,8 @@ import Button from "../Button";
 
 function Associations() {
   return (
-    <div className="flex flex-col items-center py-20 text-center bg-mirage-blue">
-      <div className="flex flex-wrap items-center justify-between mx-12 gap-y-10">
+    <div className="flex flex-col items-center py-20 text-center bg-mirage-blue sm:py-[5.5rem]">
+      <div className="flex flex-wrap items-center justify-between gap-y-10 w-80 sm:w-[33rem]">
         <Tesla fill="white" />
         <Microsoft fill="white" />
         <HewlettPackard fill="white" />
@@ -24,10 +24,13 @@ function Associations() {
       </div>
       <SectionTitle
         text="Who we work with"
-        color="text-white"
-        extraClasses="mt-14"
+        color="text-link-water-white"
+        extraClasses="mt-14 sm:mt-16"
       />
-      <SectionBodyText color="text-link-water-white/70" extraClasses="mt-4">
+      <SectionBodyText
+        color="text-link-water-white/50"
+        extraClasses="mt-4 w-112"
+      >
         Today, millions of people around the world have successfully connected
         their accounts to apps they love using our API. We provide developers
         with the tools they need to create easy and accessible experiences for
@@ -38,7 +41,7 @@ function Associations() {
         label="About Us"
         backgroundColor="bg-inherit"
         color="text-link-water-white"
-        extraClasses="mt-14"
+        extraClasses="mt-14 sm:mt-8"
       />
     </div>
   );
