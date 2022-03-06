@@ -1,15 +1,14 @@
-import Image from "next/image";
 import React from "react";
 
-import SectionTitle from "../SectionTitle";
-import Tesla from "../company-logos/Tesla";
-import Microsoft from "../company-logos/Microsoft";
-import HewlettPackard from "../company-logos/HewlettPackard";
-import Oracle from "../company-logos/Oracle";
-import Google from "../company-logos/Google";
-import Nvidia from "../company-logos/Nvidia";
-import SectionBodyText from "../SectionBodyText";
-import Button from "../Button";
+import SectionTitle from "../../SectionTitle";
+import Tesla from "../../company-logos/Tesla";
+import Microsoft from "../../company-logos/Microsoft";
+import HewlettPackard from "../../company-logos/HewlettPackard";
+import Oracle from "../../company-logos/Oracle";
+import Google from "../../company-logos/Google";
+import Nvidia from "../../company-logos/Nvidia";
+import SectionBodyText from "../../SectionBodyText";
+import Button from "../../Button";
 
 function Associations() {
   return (
@@ -43,6 +42,7 @@ function Associations() {
             label="About Us"
             backgroundColor="bg-inherit"
             color="text-link-water-white"
+            borderColor="border-link-water-white"
             extraClasses="mt-14 sm:mt-8"
           />
         </div>

@@ -1,21 +1,19 @@
 import type { NextPage } from "next";
 
-import Navbar from "../components/Navbar";
-import Input from "../components/Input";
-import Button from "../components/Button";
-import Hero from "../components/sections/Hero";
-import Associations from "../components/sections/Associations";
-import Features from "../components/sections/Features";
+import Hero from "../components/sections/index/Hero";
+import Associations from "../components/sections/index/Associations";
+import Features from "../components/sections/index/Features";
 import Footer from "../components/sections/Footer";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div className="relative">
       <Hero />
       <Associations />
       <Features />
+      <Footer invis />
       <Footer />
-    </>
+    </div>
   );
 };
 

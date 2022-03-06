@@ -8,9 +8,11 @@ module.exports = {
       container: {
         center: true,
       },
+      fontSize: {
+        price: ["56px", "72px"],
+      },
       spacing: {
         22: "5.5rem",
-
         76: "19rem",
         87: "21.75rem",
         112: "28rem",
@@ -38,6 +40,10 @@ module.exports = {
         "hero-position": "center -500px",
         "hero-position-tablet": "center -700px",
         "hero-position-desktop": "700px -200px",
+        "features-position": "1100px 27rem",
+        "pricing-position": "100px -650px",
+        "pricing-position-tablet": "550px -450px",
+        "pricing-position-desktop": "750px -550px",
         "footer-position": "center 175px",
       },
     },

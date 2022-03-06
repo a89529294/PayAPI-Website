@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="flex items-center justify-between w-full">
       <PayAPI />
-      <div className="hidden sm:block">
+      <div className="hidden sm:block sm:ml-16">
         <NavLinks color="text-velvet-rope/70" />
       </div>
       <Button
@@ -16,7 +16,7 @@ export default function Navbar() {
         label="Schedule a demo"
         backgroundColor="bg-lilac-rose"
         color="text-link-water-white"
-        extraClasses="hidden sm:block"
+        extraClasses="hidden sm:block xl:ml-auto"
       />
 
       <div className="sm:hidden">

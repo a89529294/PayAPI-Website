@@ -1,13 +1,14 @@
 import React from "react";
-import Link from "next/link";
 
 import PayAPI from "../company-logos/PayAPI";
 import Image from "next/image";
 import NavLinks from "../NavLinks";
 
-function Footer() {
+function Footer({ invis = false }) {
+  const cn = invis ? "invisible" : "absolute bottom-0 w-full";
+
   return (
-    <footer className="bg-mirage-blue">
+    <footer className={`${cn} bg-mirage-blue`}>
       <div className="flex flex-col items-center px-10 pt-10 bg-no-repeat xl:container xl:px-20 pb-14 gap-y-10 bg-hero-pattern bg-footer-position sm:py-8 sm:flex-row sm:justify-between">
         <PayAPI fill="white" />
         <NavLinks />

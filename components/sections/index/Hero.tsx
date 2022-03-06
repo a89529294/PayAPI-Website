@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import Navbar from "../Navbar";
-import DemoForm from "../DemoForm";
+import Navbar from "../../Navbar";
+import DemoForm from "../../DemoForm";
 
 const Hero = () => {
   return (
