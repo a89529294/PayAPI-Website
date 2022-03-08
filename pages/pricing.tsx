@@ -12,8 +12,8 @@ const Pricing: NextPage = () => {
   return (
     <div className="relative sm:min-h-screen">
       <PricingPlans />
-      <Footer invis />
-      <Footer />
+      {/* <Footer invis /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

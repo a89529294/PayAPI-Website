@@ -11,8 +11,8 @@ const Home: NextPage = () => {
       <Hero />
       <Associations />
       <Features />
-      <Footer invis />
-      <Footer />
+      {/* <Footer invis />
+      <Footer /> */}
     </div>
   );
 };
